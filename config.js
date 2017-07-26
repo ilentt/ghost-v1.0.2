@@ -4,31 +4,41 @@
 // Ghost runs in `development` mode by default. Full documentation can be found at http://support.ghost.org/config/
 
 var path = require('path'),
-    config;
+    config,
+    fileStorage,
+    storage;
 
 config = {
     // ### Production
     // When running Ghost in the wild, use the production environment.
     // Configure your URL and mail settings here
     production: {
-        url: 'http://bdsg2017.herokuapp.com',
-        mail: {},
+        url: process.env.HEROKU_URL,
+        mail: {
+		  transport: 'SMTP',
+		  options: {
+			service: 'Mailgun',
+			auth: {
+			  user: process.env.MAILGUN_SMTP_LOGIN,
+			  pass: process.env.MAILGUN_SMTP_PASSWORD
+			}
+		  }
+		},
+		fileStorage: fileStorage,
+		storage: storage,
         database: {
-            client: 'postgres',
-            connection: {
-				host: process.env.POSTGRES_HOST,
-				user: process.env.POSTGRES_USER,
-				password: process.env.POSTGRES_PASSWORD,
-				database: process.env.POSTGRES_DATABASE,
-				port: '5432'
-            },
-            debug: false
-        },
+		  client: 'postgres',
+		  connection: process.env.DATABASE_URL,
+		  debug: false
+		},
 
         server: {
 			host: '0.0.0.0',
             port: process.env.PORT
-        }
+        },
+		paths: {
+		  contentPath: path.join(__dirname, '/content/')
+		}
     },
 
     // ### Development **(default)**
