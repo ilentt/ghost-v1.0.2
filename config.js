@@ -16,7 +16,6 @@ config = {
         database: {
             client: 'postgres',
             connection: {
-                //filename: path.join(__dirname, '/content/data/ghost.db')
 				host: process.env.POSTGRES_HOST,
 				user: process.env.POSTGRES_USER,
 				password: process.env.POSTGRES_PASSWORD,
@@ -27,8 +26,6 @@ config = {
         },
 
         server: {
-            //host: '127.0.0.1',
-            //port: '2368'
 			host: '0.0.0.0',
             port: process.env.PORT
         }
