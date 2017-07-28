@@ -26,15 +26,15 @@ The easiest way to deploy Ghost is with our official **[Ghost(Pro)](https://ghos
 
 Not only will it save you [many hours per month](https://ghost.org/pricing/#why-ghost-pro), but all revenue goes to the Ghost Foundation, which funds the maintenance and further development of Ghost itself. So you’ll be supporting open source software *and* getting a great service **at the same time**! Talk about win/win. :trophy:
 
+## Ghost on Heroku
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ilentt/ghost-v1.0.2)
+
 ## Self-Hosters
 
 Other options are also available if you prefer playing around with servers by yourself, of course. The freedom of choice is in your hands.
 
 - [Self-hosting Guide](https://docs.ghost.org/v1.0.0/docs/getting-started-guide)
-
-## Ghost on Heroku
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ilentt/ghost-v1.0.2)
 
 # Theme Developers
 
