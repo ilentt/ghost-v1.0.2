@@ -34,7 +34,7 @@ Other options are also available if you prefer playing around with servers by yo
 
 ## Ghost on Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ilentt/ghost-v1.0.2)
 
 # Theme Developers
 
