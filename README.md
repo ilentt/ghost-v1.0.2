@@ -32,6 +32,9 @@ Other options are also available if you prefer playing around with servers by yo
 
 - [Self-hosting Guide](https://docs.ghost.org/v1.0.0/docs/getting-started-guide)
 
+## Ghost on Heroku
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 # Theme Developers
 
